@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+ 
+{% block title %}Profile{% endblock %}
+ 
+{% block content %}
+
+{% from "pagination.html" import pagination_widget %}  
+{% if pagination %}
+<div class="pagination">
+  {{ pagination_widget(pagination, '.posts') }}
+</div>
+{% endif %}
+
+  <table class="table"  style= "table-layout:fixed; height: 400">
+    <thead>
+      <tr>
+        <th scope="col" class="text-left" style="width: 5px;">Id</th>
+        <th scope="col" class="text-left" style="width: 80px;">Title</th>
+        <th scope="col" class="text-left" style="width: 20px;">Author</th>
+        <th scope="col" class="text-left" style="width: 50px;">Attachment</th>
+        <th scope="col" class="text-left" style="width: 50px;">Date_posted</th>
+        <th scope="col" class="text-center" style="width: 20px;" >Edit</th>
+        <th scope="col" class="text-center" style="width: 20px;" >View</th>
+        <th scope="col" class="text-center" style="width: 20px;" >Delete</th>
+      </tr>
+    </thead>
+  {% for post in posts %}  
+    <tbody>
+      <tr>
+        <td class="text-left" style="width: 5px;" ><a href="/posts/view/{{post.id}}">{{ post.id }}</a></td>
+        <td class="text-left" style="width: 80px;" >{{ post.title }}</td>
+        <td class="text-left" style="width: 20px;">{{ post.author }}</td>
+        <td class="text-left" style="width: 50px;" >
+        <a href="/posts/download/{{post.id}}">
+          {% if post.filename %}
+          {{post.filename}}
+          {% endif %}
+        </a></td>
+        <td class="text-left" style="width: 50px;" >{{ post.date_posted }}</td>
+        <td  class="text-center" style="width: 20px;"><a href = '/posts/edit/{{post.id}}'><i class="fas fa-user-edit"></i></a></td>
+        <td  class="text-center" style="width: 20px;"><a href = '/posts/view/{{post.id}}'><i class="fas fa-eye"></i></a></td>
+        <td  class="text-center" style="width: 20px;"><a href = '/posts/delete/{{post.id}}'><i class="fas fa-trash-alt"></i></a></td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+  <br>  
+
+{% endblock %}

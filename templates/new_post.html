@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+ 
+{% block title %}Profile{% endblock %}
+ 
+{% block content %}
+
+<h1>New Post</h1>
+  
+
+  <form action="/posts/new" enctype="multipart/form-data" method="POST">
+    <label for="title">Title:</label>
+    <textarea class="form-control" name = "title" id="title" placeholder="Enter Title" aria-label="Enter Title" rows="1"></textarea>
+    <br>
+    <label for="author">Author:</label> 
+    <textarea class="form-control" name = "author" id="author" placeholder="Enter Author" aria-label="Enter Author" rows="1"></textarea>
+    <br>
+    <label for="content">Post:</label>
+    <textarea class="form-control" name = "content" id="content" placeholder= "Enter Content" aria-label="Enter Content" rows="6"></textarea>
+    <br>
+    <input type="file" name="inputFile">
+    <br>
+    <br>
+    <br>
+    <input class="btn btn-info" type="submit" value='Post'>
+    &nbsp;&nbsp;
+    <input class="btn btn-secondary" type="button" value='Back' onclick="javascript:history.go(-1)">
+  </form>
+  <hr>
+
+  {% endblock %}
