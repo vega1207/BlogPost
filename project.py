@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
-from flask import Flask, abort, session,g,jsonify, redirect, render_template, request,send_file,url_for
+from flask import Flask, abort, session,jsonify, redirect, render_template, request,send_file,url_for
 from flask_msearch import Search
 from flask_sqlalchemy import SQLAlchemy,declarative_base
 from jieba.analyse.analyzer import ChineseAnalyzer
 from werkzeug.exceptions import HTTPException, default_exceptions
 from io import BytesIO
 from werkzeug.contrib.fixers import ProxyFix
-
-
-import os
 import re
 
 
@@ -31,7 +28,7 @@ def JsonApp(app):
     return app
 
 app = Flask(__name__)
-app.secret_key=os.urandom(24)
+app.secret_key='2313!@#!#$%dkjdsfakfj'
 app = JsonApp(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
@@ -54,7 +51,7 @@ class BlogPost(db.Model):
   __searchable__ = ['title', 'content','author','filename']  # these fields will be indexed by whoosh
   __analyzer__ = ChineseAnalyzer()   
 
-  id = db.Column(db.Integer, primary_key =True)
+  id = db.Column(db.Integer, primary_key =True,auto_increment=1)
   title = db.Column(db.String(100), nullable=False)
   content = db.Column(db.Text, nullable=False)
   author = db.Column(db.String(20), nullable=False, default = 'N/A')
@@ -183,7 +180,6 @@ def logout():
 def posts(): 
     # We need all the account info for the user so we can display it on the profile page
     # Show the profile page with account info
-    # account = Accounts.query.filter_by(id=[session['id']]).all()
     accounts = Accounts.query.msearch(str(session['id']),fields=['id'],limit=20).all()
     for account in accounts:
         page = request.args.get('page',1,type=int)
@@ -197,7 +193,7 @@ def posts():
           db.session.commit()
           return redirect('/posts')
         else:
-          all_posts = BlogPost.query.order_by(BlogPost.date_posted.desc()).paginate(page=page,per_page=6)
+          all_posts = BlogPost.query.order_by(BlogPost.id.desc()).paginate(page=page,per_page=6)
           
           return render_template('postsList.html',posts=all_posts.items,pages=page,pagination = all_posts)
 
@@ -226,10 +222,17 @@ def delete(id):
 def edit(id):
   post = BlogPost.query.get_or_404(id)
   if request.method =='POST':
+    file = request.files['inputFile']
     post.title = request.form.get('title')
     post.author = request.form.get('author')
     post.content = request.form.get('content')  
+    post.filename = request.form.get('filename')  
+    db.session.delete(post)  #delete the current post
     db.session.commit()
+    new_post = BlogPost(id=id,title=post.title,content=post.content, author = post.author,filename=file.filename, data = file.read())
+    db.session.add(new_post)
+    db.session.commit()
+
     return redirect('/posts')
   else:
     return render_template('edit.html',post=post)
@@ -245,7 +248,6 @@ def view(id):
     return redirect('/posts')
   else:
     return render_template('view.html',post=post)
-
 
 @app.route('/posts/new',methods= ['GET','POST'])
 def new_post():

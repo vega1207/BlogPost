@@ -7,7 +7,7 @@
 <h1>Editing Post</h1>
 <hr>
 <h2>Edit:</h2>
-<form action="/posts/edit/{{post.id}}" method="POST">
+<form action="/posts/edit/{{post.id}}" enctype="multipart/form-data" method="POST">
   <label for="title">Title:</label>
   <textarea class="form-control" name="title" id="title" aria-label="Enter Title" rows="1">{{post.title}}</textarea>
   <br>
@@ -18,6 +18,13 @@
   <textarea class="form-control" name="content" id="content" aria-label="Enter Content"
     rows="6">{{post.content}}</textarea>
   <br>
+  <label for="filename">Attachment:</label>
+  <a href="/posts/download/{{post.id}}">
+    {{post.filename}}
+  </a>
+  <br>
+  <input type="file" name="inputFile">
+  <br><br><br>
   <input class="btn btn-info" type="submit" value='Save'>
   &nbsp;&nbsp;
   <input class="btn btn-secondary" type="button" value='Back' onclick="javascript:history.go(-1)">
