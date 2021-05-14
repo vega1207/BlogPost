@@ -232,7 +232,6 @@ def edit(id):
     new_post = BlogPost(id=id,title=post.title,content=post.content, author = post.author,filename=file.filename, data = file.read())
     db.session.add(new_post)
     db.session.commit()
-
     return redirect('/posts')
   else:
     return render_template('edit.html',post=post)

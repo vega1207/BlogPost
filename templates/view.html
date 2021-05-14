@@ -4,24 +4,20 @@
  
 {% block content %}
 
-<h1>Viewing Post</h1>
-<hr>
-
+<h3>Viewing Post</h3>
 <form action="/posts/view/{{post.id}}" method="GET">
   <label for="title">Title:</label>
   <textarea class="form-control" name="title" id="title" aria-label="Enter Title" rows="1"
     readonly>{{post.title}}</textarea>
-  <br>
   <label for="author">Author:</label>
   <textarea class="form-control" name="author" id="author" aria-label="Enter Author" rows="1"
     readonly>{{post.author}}</textarea>
-  <br>
   <label for="content">Post:</label>
-  <textarea class="form-control" style="height" name="content" id="content" aria-label="Enter Content" rows="6"
+  <textarea class="form-control" name="content" id="content" aria-label="Enter Content" rows="17"
     readonly>{{post.content}}</textarea>
+  {#{{post.data.decode('utf-8')}}#}
   <br>
   <input type="button" value='Back' onclick="javascript:history.go(-1)">
 </form>
-<hr>
 
 {% endblock %}
