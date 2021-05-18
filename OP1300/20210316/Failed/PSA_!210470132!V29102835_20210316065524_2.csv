@@ -1,0 +1,17 @@
+Product Name,PSA
+Stationt Name,BurnIn
+Version,V1.0.0
+Serial Number,!210470132!V29102835
+Total Test Time,97
+DUTResult,Terminated
+Date Time,20210316065524
+Stepname,MeasureValue,Unit,Lowlimit,Highlimit,Result,CycleTime
+If,,,,,Done,2.79E-05
+End,,,,,Done,6.64E-05
+7.0.0 Error Code Check,62 FD 41 EF FF FF FF FF FF,,62 FD 41 EF FF FF FF FF FF,62 FD 41 EF FF FF FF FF FF,Passed,8.23E-05
+7.4.1 Power Test U Current OP4(0),423.94967627032,A,400,500,Passed,0.1802103
+7.4.2 Power Test V Current OP4(0),421.745725260517,A,400,500,Passed,0.1723778
+7.4.3 Power Test W Current OP4(0),310.994545289327,A,400,500,Failed,0.173752
+If,,,,,Done,3E-05
+End,,,,,Done,6.67E-05
+ 

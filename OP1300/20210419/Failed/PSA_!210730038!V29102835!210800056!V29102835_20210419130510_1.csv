@@ -1,0 +1,14 @@
+Product Name,PSA
+Stationt Name,BurnIn
+Version,V1.0.0
+Serial Number,!210730038!V29102835!210800056!V29102835
+Total Test Time,85
+DUTResult,Terminated
+Date Time,20210419130510
+Stepname,MeasureValue,Unit,Lowlimit,Highlimit,Result,CycleTime
+PLCWriteRegisters,,,,,Skipped,2.72E-05
+PLCWriteRegisters,,,,,Skipped,2.26E-05
+PLCWriteRegisters,,,,,Skipped,2.22E-05
+If,,,,,Done,7.87E-05
+End,,,,,Done,2.82E-05
+ 

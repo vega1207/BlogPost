@@ -1,0 +1,14 @@
+Product Name,PSA
+Stationt Name,BurnIn
+Version,V1.0.0
+Serial Number,!210930143!V29102835
+Total Test Time,125
+DUTResult,Failed
+Date Time,20210427152028
+Stepname,MeasureValue,Unit,Lowlimit,Highlimit,Result,CycleTime
+If,,,,,Done,2.44E-05
+End,,,,,Done,1.62E-05
+7.0.0 Error Code Check,00,,FF,FF,Failed,8.9E-05
+If,,,,,Done,4.63E-05
+End,,,,,Done,1.69E-05
+ 

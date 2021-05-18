@@ -63,8 +63,7 @@
             </li>
           </ul>
           <form class="form-inline my-0 my-lg-0" id="query" method="GET" action="search">
-            <input class="col-md-10" type="text" name="query" id="query"
-              placeholder="Search" aria-label="Search">
+            <input class="col-md-10" type="text" name="query" id="query" placeholder="Search" aria-label="Search">
           </form>
         </div>
       </nav>
@@ -79,10 +78,23 @@
   </div>
 
   <script>
-      function getQuery(){
-        var txt = $('form').serialize();
-        txt.length >6 ? $('#search').attr("href",'search?'+txt) : $('#search').attr("href",'#');
-      }
+    function getQuery() {
+      var txt = $('form').serialize();
+      txt.length > 6 ? $('#search').attr("href", 'search?' + txt) : $('#search').attr("href", '#');
+    }
   </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/queue.v1.min.js"></script>
+  <script>
+    var piechartDataUrl = "{{ url_for('get_piechart_data') }}";
+    var barchartDataUrl = "{{ url_for('get_barchart_data') }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/pieChart.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/barChart.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/updateChart.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
+
 </html>

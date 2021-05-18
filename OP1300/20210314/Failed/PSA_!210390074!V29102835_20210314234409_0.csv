@@ -1,0 +1,41 @@
+Product Name,PSA
+Stationt Name,BurnIn
+Version,V1.0.0
+Serial Number,!210390074!V29102835
+Total Test Time,174
+DUTResult,Terminated
+Date Time,20210314234409
+Stepname,MeasureValue,Unit,Lowlimit,Highlimit,Result,CycleTime
+If,,,,,Done,2.22E-05
+End,,,,,Done,2.01E-05
+7.0.0 Error Code Check,62 FD 41 EF FF FF FF FF FF,,62 FD 41 EF FF FF FF FF FF,62 FD 41 EF FF FF FF FF FF,Passed,7.87E-05
+If,,,,,Done,2.3E-05
+End,,,,,Done,1.87E-05
+If,,,,,Done,2.26E-05
+End,,,,,Done,2.01E-05
+7.0.0 Error Code Check,62 FD 41 EF FF FF FF FF FF,,62 FD 41 EF FF FF FF FF FF,62 FD 41 EF FF FF FF FF FF,Passed,8.83E-05
+7.4.1 Power Test U Current OP4(0),0.141767842669095,A,400,500,Failed,0.2027909
+7.4.2 Power Test V Current OP4(0),0.116921004997002,A,400,500,Failed,0.1983979
+7.4.3 Power Test W Current OP4(0),0.120416376153122,A,400,500,Failed,0.1992803
+7.4.4 Power Test F_TEMP_MEAS_CTL  OP4(0),51,deg,20,99,Passed,0.0001614
+7.4.5 Power Test F_TEMP_MEAS_MOD OP4(0),63,deg,20,99,Passed,0.0002161
+7.4.6 Power Test F_TEMP_MEAS_DRV OP4(0),53,deg,20,99,Passed,0.0001536
+7.4.7 Power Test AN_CTP_COOLING_F OP4(0),57,deg,20,99,Passed,0.0002249
+7.4.8 Power Test FSEVBLV_Voltage OP4(0),10,V,9,12,Passed,0.0001684
+7.4.9 Power Test FSEVBHV_Voltage OP4(0),378,V,360,410,Passed,0.0005717
+7.4.10 Power Test FTEABHV_UbatHV OP4(0),388,V,360,410,Passed,0.0002415
+7.4.11 Power Test SAEABHV_Voltage OP4(0),378,V,360,410,Passed,0.0001818
+7.8.1 Power Test U Current OP8(0),0.139334223535155,A,400,500,Failed,0.2032778
+7.8.2 Power Test V Current OP8(0),0.110622263936239,A,400,500,Failed,0.1985893
+7.8.3 Power Test W Current OP8(0),0.12315779467352,A,400,500,Failed,0.1984668
+7.8.4 Power Test F_TEMP_MEAS_CTL  OP8(0),52,deg,20,99,Passed,0.0001741
+7.8.5 Power Test F_TEMP_MEAS_MOD OP8(0),62,deg,20,99,Passed,0.0001557
+7.8.6 Power Test F_TEMP_MEAS_DRV OP8(0),53,deg,20,99,Passed,0.0001575
+7.8.7 Power Test AN_CTP_COOLING_F OP8(0),57,deg,20,99,Passed,0.0001656
+7.8.8 Power Test FSEVBLV_Voltage OP8(0),15,V,14,17,Passed,0.0005141
+7.8.9 Power Test FSEVBHV_Voltage OP8(0),378,V,360,410,Passed,0.0001776
+7.8.10 Power Test FTEABHV_UbatHV OP8(0),388,V,360,410,Passed,0.0005124
+7.8.11 Power Test SAEABHV_Voltage OP8(0),378,V,360,410,Passed,0.0003079
+If,,,,,Done,8.44E-05
+End,,,,,Done,3.81E-05
+ 

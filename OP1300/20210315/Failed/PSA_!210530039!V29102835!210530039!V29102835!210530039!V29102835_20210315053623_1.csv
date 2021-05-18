@@ -1,0 +1,33 @@
+Product Name,PSA
+Stationt Name,BurnIn
+Version,V1.0.0
+Serial Number,!210530039!V29102835!210530039!V29102835!210530039!V29102835
+Total Test Time,225
+DUTResult,Terminated
+Date Time,20210315053623
+Stepname,MeasureValue,Unit,Lowlimit,Highlimit,Result,CycleTime
+If,,,,,Done,4.41E-05
+End,,,,,Done,2.86E-05
+7.0.0 Error Code Check,00 00 00 00 00 00 00 00,,62 FD 41 EF FF FF FF FF FF,62 FD 41 EF FF FF FF FF FF,Failed,7.91E-05
+If,,,,,Done,3.71E-05
+End,,,,,Done,3.21E-05
+If,,,,,Done,4.34E-05
+End,,,,,Done,2.75E-05
+7.0.0 Error Code Check,00 00 00 00 00 00 00 00,,62 FD 41 EF FF FF FF FF FF,62 FD 41 EF FF FF FF FF FF,Failed,4.7E-05
+7.4.1 Power Test U Current OP4(0),0.0753504600541765,A,400,500,Failed,0.1788473
+7.4.2 Power Test V Current OP4(0),0.238404680689175,A,400,500,Failed,0.1693513
+7.4.3 Power Test W Current OP4(0),0.145131479000634,A,400,500,Failed,0.172537
+7.4.4 Power Test F_TEMP_MEAS_CTL  OP4(0),0,deg,20,99,Failed,0.0002285
+7.4.5 Power Test F_TEMP_MEAS_MOD OP4(0),0,deg,20,99,Failed,0.0001783
+7.4.6 Power Test F_TEMP_MEAS_DRV OP4(0),0,deg,20,99,Failed,0.0001642
+7.4.7 Power Test AN_CTP_COOLING_F OP4(0),0,deg,20,99,Failed,0.0001575
+7.4.8 Power Test FSEVBLV_Voltage OP4(0),0,V,9,12,Failed,0.000185
+7.4.9 Power Test FSEVBHV_Voltage OP4(0),-999,V,360,410,Failed,0.0001942
+7.4.10 Power Test FTEABHV_UbatHV OP4(0),-999,V,360,410,Failed,0.0001822
+7.4.11 Power Test SAEABHV_Voltage OP4(0),-999,V,360,410,Failed,0.0001843
+7.8.1 Power Test U Current OP8(0),0.0735520856664014,A,400,500,Failed,0.1764991
+7.8.2 Power Test V Current OP8(0),0.255964762879326,A,400,500,Failed,0.170615
+7.8.3 Power Test W Current OP8(0),0.134321043065408,A,400,500,Failed,0.1719903
+If,,,,,Done,4.84E-05
+End,,,,,Done,1.69E-05
+ 

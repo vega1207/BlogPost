@@ -1,0 +1,26 @@
+Product Name,PSA
+Stationt Name,BurnIn
+Version,V1.0.0
+Serial Number,
+Total Test Time,227
+DUTResult,Terminated
+Date Time,20210318024032
+Stepname,MeasureValue,Unit,Lowlimit,Highlimit,Result,CycleTime
+If,,,,,Done,2.86E-05
+End,,,,,Done,2.3E-05
+7.0.0 Error Code Check,62 FD 41 EF FF FF FF FF FF,,62 FD 41 EF FF FF FF FF FF,62 FD 41 EF FF FF FF FF FF,Passed,4.24E-05
+7.4.1 Power Test U Current OP4(0),423.583914542371,A,400,500,Passed,0.2790577
+7.4.2 Power Test V Current OP4(0),428.402264570336,A,400,500,Passed,0.3828544
+7.4.3 Power Test W Current OP4(0),429.461709358781,A,400,500,Passed,0.3865814
+7.4.4 Power Test F_TEMP_MEAS_CTL  OP4(0),24,deg,20,99,Passed,0.0004085
+7.4.5 Power Test F_TEMP_MEAS_MOD OP4(0),84,deg,20,99,Passed,0.0001635
+7.4.6 Power Test F_TEMP_MEAS_DRV OP4(0),24,deg,20,99,Passed,0.0011462
+7.4.7 Power Test AN_CTP_COOLING_F OP4(0),22,deg,20,99,Passed,0.0001843
+7.4.8 Power Test FSEVBLV_Voltage OP4(0),9,V,9,12,Passed,0.0001949
+7.4.9 Power Test FSEVBHV_Voltage OP4(0),395,V,360,410,Passed,0.0001815
+7.4.10 Power Test FTEABHV_UbatHV OP4(0),393,V,360,410,Passed,0.0002472
+7.4.11 Power Test SAEABHV_Voltage OP4(0),395,V,360,410,Passed,0.0002807
+7.8.1 Power Test U Current OP8(0),0.130062803536688,A,400,500,Failed,0.3920284
+If,,,,,Done,2.75E-05
+End,,,,,Done,2.72E-05
+ 

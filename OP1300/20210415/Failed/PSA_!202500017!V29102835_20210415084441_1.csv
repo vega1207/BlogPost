@@ -1,0 +1,20 @@
+Product Name,PSA
+Stationt Name,BurnIn
+Version,V1.0.0
+Serial Number,!202500017!V29102835
+Total Test Time,154
+DUTResult,Failed
+Date Time,20210415084441
+Stepname,MeasureValue,Unit,Lowlimit,Highlimit,Result,CycleTime
+If,,,,,Done,5.3E-05
+End,,,,,Done,2.12E-05
+7.0.0 Error Code Check,FF,,FF,FF,Passed,8.4E-05
+If,,,,,Done,3.14E-05
+End,,,,,Done,2.51E-05
+If,,,,,Done,5.33E-05
+End,,,,,Done,2.26E-05
+7.0.0 Error Code Check,FF,,FF,FF,Passed,7.13E-05
+7.0.1 Enter Torque mode,False,,True,True,Failed,0.0002451
+If,,,,,Done,3E-05
+End,,,,,Done,2.15E-05
+ 

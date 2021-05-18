@@ -1,0 +1,66 @@
+Product Name,PSA
+Stationt Name,BurnIn
+Version,V1.0.0
+Serial Number,!210390074!V29102835
+Total Test Time,218
+DUTResult,Terminated
+Date Time,20210314225925
+Stepname,MeasureValue,Unit,Lowlimit,Highlimit,Result,CycleTime
+If,,,,,Done,4.06E-05
+End,,,,,Done,6.64E-05
+7.0.0 Error Code Check,62 FD 41 EF FF FF FF FF FF,,62 FD 41 EF FF FF FF FF FF,62 FD 41 EF FF FF FF FF FF,Passed,5.58E-05
+If,,,,,Done,3.99E-05
+End,,,,,Done,6.11E-05
+If,,,,,Done,2.75E-05
+End,,,,,Done,6E-05
+7.0.0 Error Code Check,62 FD 41 EF FF FF FF FF FF,,62 FD 41 EF FF FF FF FF FF,62 FD 41 EF FF FF FF FF FF,Passed,0.0001363
+7.4.1 Power Test U Current OP4(0),0.0819255962613921,A,400,500,Failed,0.1795185
+7.4.2 Power Test V Current OP4(0),0.271609984343622,A,400,500,Failed,0.1735691
+7.4.3 Power Test W Current OP4(0),0.109413620658589,A,400,500,Failed,0.1736189
+7.4.4 Power Test F_TEMP_MEAS_CTL  OP4(0),52,deg,20,99,Passed,0.0001744
+7.4.5 Power Test F_TEMP_MEAS_MOD OP4(0),62,deg,20,99,Passed,0.0003648
+7.4.6 Power Test F_TEMP_MEAS_DRV OP4(0),53,deg,20,99,Passed,0.0001561
+7.4.7 Power Test AN_CTP_COOLING_F OP4(0),56,deg,20,99,Passed,0.0001663
+7.4.8 Power Test FSEVBLV_Voltage OP4(0),10,V,9,12,Passed,0.0002147
+7.4.9 Power Test FSEVBHV_Voltage OP4(0),377,V,360,410,Passed,0.0002006
+7.4.10 Power Test FTEABHV_UbatHV OP4(0),386,V,360,410,Passed,0.0001631
+7.4.11 Power Test SAEABHV_Voltage OP4(0),377,V,360,410,Passed,0.0001762
+7.8.1 Power Test U Current OP8(0),0.0817640705378167,A,400,500,Failed,0.1806912
+7.8.2 Power Test V Current OP8(0),0.270436850409446,A,400,500,Failed,0.1730412
+7.8.3 Power Test W Current OP8(0),0.102189400584115,A,400,500,Failed,0.1733385
+7.8.4 Power Test F_TEMP_MEAS_CTL  OP8(0),53,deg,20,99,Passed,0.0001741
+7.8.5 Power Test F_TEMP_MEAS_MOD OP8(0),61,deg,20,99,Passed,0.0002217
+7.8.6 Power Test F_TEMP_MEAS_DRV OP8(0),53,deg,20,99,Passed,0.0011441
+7.8.7 Power Test AN_CTP_COOLING_F OP8(0),57,deg,20,99,Passed,0.0001571
+7.8.8 Power Test FSEVBLV_Voltage OP8(0),15,V,14,17,Passed,0.0002044
+7.8.9 Power Test FSEVBHV_Voltage OP8(0),377,V,360,410,Passed,0.0002214
+7.8.10 Power Test FTEABHV_UbatHV OP8(0),386,V,360,410,Passed,0.0002239
+7.8.11 Power Test SAEABHV_Voltage OP8(0),377,V,360,410,Passed,0.000184
+7.4.1 Power Test U Current OP4(1),0.078569166963983,A,400,500,Failed,0.1759003
+7.4.2 Power Test V Current OP4(1),0.269236140868663,A,400,500,Failed,0.1712718
+7.4.3 Power Test W Current OP4(1),0.107663294951257,A,400,500,Failed,0.1726923
+7.4.4 Power Test F_TEMP_MEAS_CTL  OP4(1),53,deg,20,99,Passed,0.0001631
+7.4.5 Power Test F_TEMP_MEAS_MOD OP4(1),59,deg,20,99,Passed,0.000214
+7.4.6 Power Test F_TEMP_MEAS_DRV OP4(1),53,deg,20,99,Passed,0.000202
+7.4.7 Power Test AN_CTP_COOLING_F OP4(1),57,deg,20,99,Passed,0.0002034
+7.4.8 Power Test FSEVBLV_Voltage OP4(1),10,V,9,12,Passed,0.0001737
+7.4.9 Power Test FSEVBHV_Voltage OP4(1),377,V,360,410,Passed,0.0002352
+7.4.10 Power Test FTEABHV_UbatHV OP4(1),386,V,360,410,Passed,0.0001751
+7.4.11 Power Test SAEABHV_Voltage OP4(1),377,V,360,410,Passed,0.0005438
+7.8.1 Power Test U Current OP8(1),0.074850797620195,A,400,500,Failed,0.1786188
+7.8.2 Power Test V Current OP8(1),0.266613894977334,A,400,500,Failed,0.1736552
+7.8.3 Power Test W Current OP8(1),0.10737784762785,A,400,500,Failed,0.1727001
+7.8.4 Power Test F_TEMP_MEAS_CTL  OP8(1),54,deg,20,99,Passed,0.0001744
+7.8.5 Power Test F_TEMP_MEAS_MOD OP8(1),57,deg,20,99,Passed,0.0001737
+7.8.6 Power Test F_TEMP_MEAS_DRV OP8(1),54,deg,20,99,Passed,0.0001674
+7.8.7 Power Test AN_CTP_COOLING_F OP8(1),56,deg,20,99,Passed,0.0111683
+7.8.8 Power Test FSEVBLV_Voltage OP8(1),15,V,14,17,Passed,0.0002278
+7.8.9 Power Test FSEVBHV_Voltage OP8(1),377,V,360,410,Passed,0.0004852
+7.8.10 Power Test FTEABHV_UbatHV OP8(1),387,V,360,410,Passed,0.000172
+7.8.11 Power Test SAEABHV_Voltage OP8(1),377,V,360,410,Passed,0.0001871
+7.4.1 Power Test U Current OP4(2),0.0841102321140431,A,400,500,Failed,0.1809143
+7.4.2 Power Test V Current OP4(2),0.264476962816909,A,400,500,Failed,0.1738155
+7.4.3 Power Test W Current OP4(2),0.111079653895021,A,400,500,Failed,0.1726588
+If,,,,,Done,2.82E-05
+End,,,,,Done,7.06E-05
+ 
