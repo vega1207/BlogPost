@@ -82,9 +82,9 @@ class Accounts(db.Model):
     return 'Accounts:' + str(self.id)
 
 
-#eol_pass_list table
+#eolpasslist table
 class EolPassList(db.Model):
-  __tablename__ = 'eol_pass_list'
+  __tablename__ = 'eolpasslist'
   __searchable__ = ['PPID', 'TestItem']  # these fields will be indexed by whoosh
   __analyzer__ = ChineseAnalyzer()   
 
@@ -98,9 +98,9 @@ class EolPassList(db.Model):
   def __repr__(self):
     return 'EolPassList:' + str(self.id)
 
-#eol_pass_list table
+#eolfaillist table
 class EolFailList(db.Model):
-  __tablename__ = 'eol_pass_list'
+  __tablename__ = 'eolfaillist'
   __searchable__ = ['PPID', 'TestItem']  # these fields will be indexed by whoosh
   __analyzer__ = ChineseAnalyzer()   
 
@@ -376,13 +376,11 @@ def charts():
   return render_template('charts.html')
   
 
-@app.route('/eolCharts')
+@app.route('/eolCharts',methods= ['GET','POST'])
 def eolCharts():
-  post = BlogPost.query.get_or_404(id)
-  if request.method =='POST':
-    file = request.files['inputFile']
+  post = EolPassList.query.get_or_404(id)
 
-  return render_template('charts.html')
+  return render_template('eolcharts.html',post=post)
 
 
 
