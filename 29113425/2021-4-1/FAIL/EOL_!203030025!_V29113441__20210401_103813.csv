@@ -1,0 +1,25 @@
+Product Name,29113425
+Station Name,EOL
+Serial Number,!203030025!_V29113441
+DateTime,20210401_103927
+Total Test Time,82.600000
+Result,Fail
+TestItem,MeasureValue,Unit,LowLimit,HiLimit,Result,CycleTime
+Sheung_shui,,,,,Passed,0.749
+Switch ON CAN_12,,,,,Passed,0.141
+Switch On CAN_34,,,,,Passed,0.134
+Voltage=12.5V,,,,,Passed,0.144
+Current=5A,,,,,Passed,0.107
+12V_DC_Source,,,,,Passed,0.099
+Wait,,,,,Passed,1.020
+Switch ON Current measure,,,,,Passed,0.135
+Switch OFF 12V_9,,,,,Passed,0.135
+Switch On 12V_9,,,,,Passed,0.134
+Wait,,,,,Passed,0.517
+Switch OFF Current measure,,,,,Passed,0.134
+Wait,,,,,Passed,0.516
+Wake up,,,,,Passed,1.044
+Wait,,,,,Passed,0.518
+Switch OFF CAN_34,,,,,Passed,0.135
+Wait,,,,,Passed,5.017
+Standby Power Current Measure,0.565,,0.6,0.9,Failed,0.160

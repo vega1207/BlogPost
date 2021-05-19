@@ -1,0 +1,81 @@
+Product Name,29113425
+Station Name,EOL
+Serial Number,!210240019!_V29113441
+DateTime,20210412_102220
+Total Test Time,183.600000
+Result,Fail
+TestItem,MeasureValue,Unit,LowLimit,HiLimit,Result,CycleTime
+Sheung_shui,,,,,Passed,0.761
+Switch ON CAN_12,,,,,Passed,0.136
+Switch On CAN_34,,,,,Passed,0.129
+Voltage=12.5V,,,,,Passed,0.171
+Current=5A,,,,,Passed,0.142
+12V_DC_Source,,,,,Passed,0.096
+Wait,,,,,Passed,1.023
+Switch ON Current measure,,,,,Passed,0.134
+Switch OFF 12V_9,,,,,Passed,0.128
+Switch On 12V_9,,,,,Passed,0.129
+Wait,,,,,Passed,0.516
+Switch OFF Current measure,,,,,Passed,0.131
+Wait,,,,,Passed,0.516
+Wake up,,,,,Passed,1.218
+Wait,,,,,Passed,0.518
+Switch OFF CAN_34,,,,,Passed,0.139
+Wait,,,,,Passed,5.016
+Standby Power Current Measure,0.736,,0.6,0.9,Passed,0.186
+Connect DUT,,,,,Passed,4.689
+Wait,,,,,Passed,0.516
+Read MAIN_MSGu8InverterHVILStatus,0,,0,0,Passed,0.068
+Switch On 14,,,,,Passed,0.131
+Wait,,,,,Passed,0.516
+Switch OFF CAN_43,,,,,Passed,0.131
+Switch On 12V_10,,,,,Passed,0.133
+Switch On 12V_20,,,,,Passed,0.131
+EnvironmentPath,,,,,Passed,0.968
+Write MAIN_VSIBenchOnDataTreatmentC=1 ,,,,,Passed,0.218
+FPGA version,0d180a03,,0d180a03,,Passed,0.031
+MCU version,0405,,0405,,Passed,0.031
+Read FSSMACS_AclState,50,,30,50,Passed,0.025
+Read FTSMACS_AclState,3,,3,3,Passed,0.023
+Read SASMACS_AclState,2,,2,2,Passed,0.023
+Read HV_FS_FaultLevel_U16,0,,0,2,Passed,0.023
+Read FTEAEXC_UResExcAvg,0.982,,0.95,1.2,Passed,0.029
+Set MAIN_VSIRxaFaultBOverVoltVBat=0,,,,,Passed,0.093
+Read MAIN_VSIRxsGridVoltW,3.000,,2,4,Passed,0.024
+Wait,,,,,Passed,0.516
+Set LV Voltage=10V,,,,,Passed,0.140
+Wait,,,,,Passed,0.516
+Read_FS_UbatLV_U16,1161,,900,1300,Passed,0.049
+Set_LV_Voltage=12V,,,,,Passed,0.142
+Wait,,,,,Passed,0.515
+Read_FS_UbatLV_U16,1401,,1200,1600,Passed,0.044
+Set_LV_Voltage=14V,,,,,Passed,0.141
+Wait,,,,,Passed,0.516
+Read_FS_UbatLV_U16,1644,,1400,1800,Passed,0.045
+Read Correction,0.00828,,0,1,Passed,0.147
+LV_Caculation ,,,,,Passed,0.059
+NumericTest,0.00828,,0,1,Passed,0.003
+Set_LV_Voltage=12.5V,,,,,Passed,0.154
+Switch On CAN_34,,,,,Passed,0.131
+HV_Channel ON,,,,,Passed,0.130
+Apply HV Battery = 0V,,,,,Passed,0.045
+HV_Source ON,,,,,Passed,0.043
+Switch On HV_36,,,,,Passed,0.133
+Switch On HV_38,,,,,Passed,0.130
+Switch On 12V_8,,,,,Passed,0.132
+Switch On 12V_9,,,,,Passed,0.131
+Switch On ENS_20,,,,,Passed,0.130
+Read T_Iuvw3_U16[0],2044,,2024,2080,Passed,0.038
+Read T_Iuvw3_U16[1],2050,,2024,2080,Passed,0.024
+Read T_Iuvw3_U16[2],2056,,2024,2080,Passed,0.023
+Read FS_IbatHV_U16,2054,,2024,2080,Passed,0.023
+HV_Channel ON,,,,,Passed,0.130
+HV_Source ON,,,,,Passed,0.054
+Apply HV Battery = 270V,,,,,Passed,0.043
+Apply HV Battery =1A,,,,,Passed,0.043
+Wait,,,,,Passed,0.515
+Read FSEABHV_UbatHV,269.947,,265,273,Passed,0.024
+HV_Channel OFF,,,,,Passed,0.128
+HV_Source OFF,,,,,Passed,0.044
+Wait,,,,,Passed,1.016
+Read FSMAPMT_PmTemp,26.331,,18,26,Failed,0.023

@@ -1,0 +1,322 @@
+Product Name,29113425
+Station Name,EOL
+Serial Number,!202960153!_V29113441
+DateTime,20210401_110215
+Total Test Time,176.000000
+Result,Fail
+TestItem,MeasureValue,Unit,LowLimit,HiLimit,Result,CycleTime
+Sheung_shui,,,,,Passed,0.760
+Switch ON CAN_12,,,,,Passed,0.135
+Switch On CAN_34,,,,,Passed,0.134
+Voltage=12.5V,,,,,Passed,0.144
+Current=5A,,,,,Passed,0.128
+12V_DC_Source,,,,,Passed,0.096
+Wait,,,,,Passed,1.017
+Switch ON Current measure,,,,,Passed,0.351
+Switch OFF 12V_9,,,,,Passed,0.133
+Switch On 12V_9,,,,,Passed,0.135
+Wait,,,,,Passed,0.516
+Switch OFF Current measure,,,,,Passed,0.159
+Wait,,,,,Passed,0.516
+Wake up,,,,,Passed,1.143
+Wait,,,,,Passed,0.526
+Switch OFF CAN_34,,,,,Passed,0.188
+Wait,,,,,Passed,5.017
+Standby Power Current Measure,0.733,,0.6,0.9,Passed,0.165
+Connect DUT,,,,,Passed,4.716
+Wait,,,,,Passed,0.517
+Read MAIN_MSGu8InverterHVILStatus,0,,0,0,Passed,0.069
+Switch On 14,,,,,Passed,0.136
+Wait,,,,,Passed,0.517
+Switch OFF CAN_43,,,,,Passed,0.142
+Switch On 12V_10,,,,,Passed,0.145
+Switch On 12V_20,,,,,Passed,0.135
+EnvironmentPath,,,,,Passed,1.082
+Write MAIN_VSIBenchOnDataTreatmentC=1 ,,,,,Passed,0.202
+FPGA version,0d180a03,,0d180a03,,Passed,0.032
+MCU version,0405,,0405,,Passed,0.031
+Read FSSMACS_AclState,50,,30,50,Passed,0.024
+Read FTSMACS_AclState,3,,3,3,Passed,0.026
+Read SASMACS_AclState,2,,2,2,Passed,0.029
+Read HV_FS_FaultLevel_U16,0,,0,2,Passed,0.026
+Read FTEAEXC_UResExcAvg,0.982,,0.95,1.2,Passed,0.025
+Set MAIN_VSIRxaFaultBOverVoltVBat=0,,,,,Passed,0.074
+Read MAIN_VSIRxsGridVoltW,3.000,,2,4,Passed,0.024
+Wait,,,,,Passed,0.516
+Set LV Voltage=10V,,,,,Passed,0.152
+Wait,,,,,Passed,0.517
+Read_FS_UbatLV_U16,1160,,900,1300,Passed,0.051
+Set_LV_Voltage=12V,,,,,Passed,0.155
+Wait,,,,,Passed,0.516
+Read_FS_UbatLV_U16,1404,,1200,1600,Passed,0.047
+Set_LV_Voltage=14V,,,,,Passed,0.165
+Wait,,,,,Passed,0.517
+Read_FS_UbatLV_U16,1646,,1400,1800,Passed,0.056
+Read Correction,0.00823,,0,1,Passed,0.098
+LV_Caculation ,,,,,Passed,0.065
+NumericTest,0.00823,,0,1,Passed,0.003
+Set_LV_Voltage=12.5V,,,,,Passed,0.150
+Switch On CAN_34,,,,,Passed,0.150
+HV_Channel ON,,,,,Passed,0.130
+Apply HV Battery = 0V,,,,,Passed,0.057
+HV_Source ON,,,,,Passed,0.053
+Switch On HV_36,,,,,Passed,0.143
+Switch On HV_38,,,,,Passed,0.141
+Switch On 12V_8,,,,,Passed,0.151
+Switch On 12V_9,,,,,Passed,0.152
+Switch On ENS_20,,,,,Passed,0.142
+Read T_Iuvw3_U16[0],2046,,2024,2080,Passed,0.025
+Read T_Iuvw3_U16[1],2054,,2024,2080,Passed,0.026
+Read T_Iuvw3_U16[2],2055,,2024,2080,Passed,0.025
+Read FS_IbatHV_U16,2054,,2024,2080,Passed,0.028
+HV_Channel ON,,,,,Passed,0.131
+HV_Source ON,,,,,Passed,0.048
+Apply HV Battery = 270V,,,,,Passed,0.058
+Apply HV Battery =1A,,,,,Passed,0.051
+Wait,,,,,Passed,0.521
+Read FSEABHV_UbatHV,270.138,,265,273,Passed,0.024
+HV_Channel OFF,,,,,Passed,0.130
+HV_Source OFF,,,,,Passed,0.044
+Wait,,,,,Passed,1.017
+Read FSMAPMT_PmTemp,22.558,,18,26,Passed,0.024
+Read FSMADBT_DboardTemp,22.340,,18,40,Passed,0.026
+Read FSMACBT_CboardTempHV,22.894,,18,40,Passed,0.024
+Read FSMACBT_CboardTempLV,22.596,,18,40,Passed,0.025
+Read FSMAICT_CoolingTemp,21.574,,18,28,Passed,0.024
+Read FSMAMST_StatorTemp1,83.237,,78,88,Passed,0.025
+Read FSMAMST_StatorTemp2,86.763,,78,88,Passed,0.024
+Wait,,,,,Passed,0.517
+Set BSW_U32SystemShutDownDelay_MaxC=720000,,,,,Passed,0.157
+Set MAIN_bMSGRxToutBenchOnC=1,,,,,Passed,0.166
+Wait,,,,,Passed,0.517
+Set MAIN_MSGu8PowerMode=7,,,,,Passed,0.175
+Set MAIN_u16ModeReq=1,,,,,Passed,0.170
+Wait,,,,,Passed,0.517
+Set UDS_bRoutineActive=1,,,,,Passed,0.450
+Set UDS_bRoutineActive=1,,,,,Passed,0.312
+Wait,,,,,Passed,0.517
+Set MAIN_MSGu8PowerMode=7,,,,,Passed,0.170
+Wait,,,,,Passed,0.517
+ENS testing ENS_u32Dty,9749,,5000,15000,Passed,1.125
+ENS testing ENS_u32Prd,19998,,10000,30000,Passed,1.080
+HV_Channel ON,,,,,Passed,0.131
+HV_Source ON,,,,,Passed,0.046
+Apply HV Battery = 220V,,,,,Passed,0.054
+Wait,,,,,Passed,0.516
+Read FS_UbatHV_U16,957,,900,1000,Passed,0.046
+Apply HV Battery = 280V,,,,,Passed,0.044
+Wait,,,,,Passed,0.516
+Read FS_UbatHV_U16,1213,,1000,1300,Passed,0.047
+Apply HV Battery = 350V,,,,,Passed,0.045
+Wait,,,,,Passed,0.519
+Read FS_UbatHV_U16,1513,,1400,1600,Passed,0.046
+Read Correction,0.234,,0,1,Passed,0.047
+HV_Caculation ,,,,,Passed,0.063
+Wait,,,,,Passed,1.517
+Check_the_water,1,,1,1,Passed,5.351
+U_LOAD,,,,,Passed,0.046
+V_LOAD,,,,,Passed,0.043
+W_LOAD,,,,,Passed,0.044
+Wait,,,,,Passed,0.517
+Apply HV Battery =270V,,,,,Passed,0.044
+Apply HV Battery =25A,,,,,Passed,0.045
+Read FSSMACS_AclState,50,,30,50,Passed,0.024
+Read FTSMACS_AclState,3,,3,3,Passed,0.025
+Set BSW_U32SystemShutDownDelay_MaxC=720000,,,,,Passed,0.160
+Wait,,,,,Passed,0.166
+Set MAIN_bMSGRxToutBenchOnC=1,,,,,Passed,0.159
+Wait,,,,,Passed,0.517
+Set MAIN_MSGu8PowerMode=7,,,,,Passed,0.170
+Wait,,,,,Passed,1.016
+Set UDS_bRoutineActive=1,,,,,Passed,0.173
+Wait,,,,,Passed,1.017
+Read FSSMACS_Aclstate,50,,30,50,Passed,0.024
+Set MAIN_u8GKNAppliModeBYPC=1,,,,,Passed,0.158
+Set MAIN_u16ModeReq=0,,,,,Passed,0.027
+Set MAIN_u16ModeReq=0,,,,,Passed,0.030
+Read FSSMACS_Aclstate,31,,30,31,Passed,0.027
+Wait,,,,,Passed,0.516
+Set FTSMACS_FtModeReqBypassOnOffC=1,,,,,Passed,0.157
+Wait,,,,,Passed,0.517
+Set FTSMACS_FtModeReqBypassValueC=6,,,,,Passed,0.157
+Wait,,,,,Passed,0.516
+Read FTSMACS_AclState,8,,8,8,Passed,0.025
+Wait,,,,,Passed,0.517
+Read FSSMACS_Aclstate,31,,30,31,Passed,0.024
+Set_FTCIVDC_ExtPwmOnOff3C=1,,,,,Passed,0.170
+Wait,,,,,Passed,0.517
+Set_U_DutyCycle= 0.548,,,,,Passed,0.159
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[0],1531,,1300,1700,Passed,0.046
+Read U Current,-366.866,,-500,500,Passed,0.269
+Set_U_DutyCycle= 0.545,,,,,Passed,0.159
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[0],1656,,1500,1900,Passed,0.046
+Read U Current,-274.243,,-500,500,Passed,0.134
+Set_U_DutyCycle= 0.54,,,,,Passed,0.157
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[0],1859,,1700,2100,Passed,0.045
+Read U Current,-131.884,,-500,500,Passed,0.133
+Set_U_DutyCycle= 0.5,,,,,Passed,0.161
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[0],2054,,1900,2300,Passed,0.046
+Read U Current,2.636,,-500,500,Passed,0.133
+Set_U_DutyCycle= 0.46,,,,,Passed,0.163
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[0],2286,,2100,2500,Passed,0.046
+Read U Current,168.0193,,-500,500,Passed,0.133
+Set_U_DutyCycle= 0.455,,,,,Passed,0.156
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[0],2512,,2300,2700,Passed,0.047
+Read U Current,323.0908,,-500,500,Passed,0.133
+Set_U_DutyCycle= 0.452,,,,,Passed,0.157
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[0],2661,,2500,2900,Passed,0.051
+Read U Current,427.845,,-500,500,Passed,0.133
+Set_V_DutyCycle= 0.548,,,,,Passed,0.157
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[1],1539,,1300,1700,Passed,0.047
+Read V Current,-365.739,,-500,500,Passed,0.134
+Set_V_DutyCycle= 0.545,,,,,Passed,0.157
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[1],1670,,1500,1900,Passed,0.048
+Read V Current,-272.757,,-500,500,Passed,0.138
+Set_V_DutyCycle= 0.54,,,,,Passed,0.158
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[1],1858,,1700,2100,Passed,0.047
+Read V Current,-133.676,,-500,500,Passed,0.134
+Set_V_DutyCycle= 0.5,,,,,Passed,0.166
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[1],2050,,1900,2300,Passed,0.047
+Read V Current,2.572,,-500,500,Passed,0.135
+Set_V_DutyCycle= 0.46,,,,,Passed,0.160
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[1],2259,,2100,2500,Passed,0.046
+Read V Current,152.158,,-500,500,Passed,0.139
+Set_V_DutyCycle= 0.455,,,,,Passed,0.161
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[1],2464,,2300,2700,Passed,0.046
+Read V Current,296.0762,,-500,500,Passed,0.134
+Set_V_DutyCycle= 0.452,,,,,Passed,0.161
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[1],2599,,2500,2900,Passed,0.050
+Read V Current,394.836,,-500,500,Passed,0.134
+Set_W_DutyCycle= 0.548,,,,,Passed,0.158
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[2],1518,,1300,1700,Passed,0.047
+Read W Current,-376.245,,-500,500,Passed,0.134
+Set_W_DutyCycle= 0.545,,,,,Passed,0.157
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[2],1661,,1500,1900,Passed,0.046
+Read W Current,-276.231,,-500,500,Passed,0.133
+Set_W_DutyCycle= 0.54,,,,,Passed,0.157
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[2],1871,,1700,2100,Passed,0.046
+Read W Current,-128.131,,-500,500,Passed,0.134
+Set_W_DutyCycle= 0.5,,,,,Passed,0.164
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[2],2053,,1900,2300,Passed,0.046
+Read W Current,2.587,,-500,500,Passed,0.134
+Set_W_DutyCycle= 0.46,,,,,Passed,0.159
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[2],2263,,2100,2500,Passed,0.046
+Read W Current,149.982,,-500,500,Passed,0.136
+Set_W_DutyCycle= 0.455,,,,,Passed,0.164
+Wait,,,,,Passed,0.516
+Read FT_Iuvw3_U16[2],2480,,2300,2700,Passed,0.047
+Read W Current,305.00957,,-500,500,Passed,0.134
+Set_W_DutyCycle= 0.452,,,,,Passed,0.157
+Wait,,,,,Passed,0.517
+Read FT_Iuvw3_U16[2],2632,,2500,2900,Passed,0.051
+Read W Current,411.108,,-500,500,Passed,0.133
+DutyCycle OFF,,,,,Passed,0.161
+FTCIVDC_ExtPwmOnOff3C,,,,,Passed,0.156
+Set FTSMACS_FtModeReqBypassOnOffC=0,,,,,Passed,0.161
+Set FTSMACS_FtModeReqBypassValueC=4,,,,,Passed,0.162
+Wait,,,,,Passed,2.017
+Read Correction U,0.701,,0.5,1,Passed,0.047
+Current_Caculation,,,,,Passed,0.078
+Read Correction V,0.717,,0.5,1,Passed,0.047
+Current_Caculation,,,,,Passed,0.036
+Read Correction W,0.708,,0.5,1,Passed,0.047
+Current_Caculation,,,,,Passed,0.037
+Wait,,,,,Passed,0.516
+get_gain,,,,,Passed,0.015
+Set FSMABLV_UbatLVCorGainC,,,,,Passed,0.020
+Wait,,,,,Passed,0.517
+get_gain,,,,,Passed,0.013
+Set FSMABLV_UbatLVCorOffsetC,,,,,Passed,0.021
+Wait,,,,,Passed,0.516
+get_gain,,,,,Passed,0.013
+Set FSEABHV_UbatHVCorGainC,,,,,Passed,0.020
+Set FTEABHV_UbatHVCorGainC,,,,,Passed,0.019
+Set SAMTBHV_GainCorrnC,,,,,Passed,0.019
+get_gain,,,,,Passed,0.013
+Set FSEABHV_UbatHVCorOffsetC,,,,,Passed,0.020
+Set FTEABHV_UbatHVCorOffsetC,,,,,Passed,0.019
+Set SAMTBHV_A2DOffsetVoltageC,,,,,Passed,0.020
+get_gain,,,,,Passed,0.013
+Set FTEAMPI_A2DGainIsuLC,,,,,Passed,0.021
+Set SAMTLCS_A2DGainIsuLC,,,,,Passed,0.020
+get_gain,,,,,Passed,0.012
+Set FTEAMPI_A2DGainIsvLC,,,,,Passed,0.020
+Set SAMTLCS_A2DGainIsvLC,,,,,Passed,0.020
+get_gain,,,,,Passed,0.013
+Set FTEAMPI_A2DGainIswLC,,,,,Passed,0.020
+Set SAMTLCS_A2DGainIswLC,,,,,Passed,0.020
+Set BSW_U32SystemShutDownDelay_MaxC=720000,,,,,Passed,0.160
+Wait,,,,,Passed,0.166
+Set MAIN_bMSGRxToutBenchOnC=1,,,,,Passed,0.160
+Wait,,,,,Passed,0.516
+Set MAIN_MSGu8PowerMode=7,,,,,Passed,0.169
+Wait,,,,,Passed,0.517
+Set UDS_bRoutineActive=1,,,,,Passed,0.177
+Set UDS_bRoutineActive=1,,,,,Passed,0.172
+Wait,,,,,Passed,0.516
+Read FSSMACS_AclState,31,,30,50,Passed,0.025
+Set MAIN_u8GKNAppliModeBYPC=1,,,,,Passed,0.155
+Set MAIN_u16ModeReq=0,,,,,Passed,0.025
+Set MAIN_u16ModeReq=0,,,,,Passed,0.172
+Wait,,,,,Passed,0.517
+Set MAIN_u16WriteTrimEnaC=5A07,,,,,Passed,0.166
+Set MAIN_u16WriteTrimEnaC=5A07,,,,,Passed,0.160
+Wait,,,,,Passed,0.518
+Set MAIN_MSGu8PowerMode=0,,,,,Passed,0.174
+Set MAIN_MSGu8PowerMode=0,,,,,Passed,0.169
+Wait,,,,,Passed,0.167
+MAIN_bShutDownReq=1,,,,,Passed,0.172
+MAIN_bShutDownReq=1,,,,,Passed,0.170
+Wait,,,,,Passed,0.516
+HV_Source OFF,,,,,Passed,0.045
+HV_Channel OFF,,,,,Passed,0.132
+Switch OFF HV_21,,,,,Passed,0.141
+Switch OFF HV_22,,,,,Passed,0.135
+Read FSMABLV_UbatLVCorGainC,0.980,,0.9,1.1,Passed,0.042
+Read FSMABLV_UbatLVCorOffsetC,54.675,,-60,100,Passed,0.020
+Read HV_CorGainC,1.0183,,0.9,1.2,Passed,0.020
+Read HV_CorOffsetC,-15.801,,-50,50,Passed,0.019
+Read FTEAMPI_A2DGainIsuLC,1.0304,,0.9,1.1,Passed,0.019
+Read FTEAMPI_A2DGainIsvLC,1.0357,,0.9,1.1,Passed,0.019
+Read FTEAMPI_A2DGainIswLC,1.0280,,0.9,1.1,Passed,0.020
+Read SAMTLCS_A2DGainIsuLC,1.0304,,0.9,1.1,Passed,0.019
+Read SAMTLCS_A2DGainIsvLC,1.0357,,0.9,1.1,Passed,0.019
+Read SAMTLCS_A2DGainIswLC,1.0280,,0.9,1.1,Passed,0.019
+Disconnect,,,,,Passed,2.376
+12V_DC_Source,,,,,Passed,0.125
+Wait,,,,,Passed,0.516
+Switch OFF 12V_8,,,,,Passed,0.134
+Switch OFF 12V_9,,,,,Passed,0.133
+Wait,,,,,Passed,0.517
+Switch On 12V_8,,,,,Passed,0.133
+Switch On 12V_9,,,,,Passed,0.133
+Voltage=12.5V,,,,,Passed,0.155
+Current=5A,,,,,Passed,0.101
+12V_DC_Source,,,,,Passed,0.090
+Wait,,,,,Passed,0.516
+Wake up,,,,,Passed,1.069
+Wait,,,,,Passed,0.519
+Connect DUT,,,,,Passed,4.968
+Wait,,,,,Passed,0.517
+Read MAIN_MSGu8InverterHVILStatus,0,,0,0,Passed,0.024
+Wait,,,,,Passed,1.516
+FSMABLV_UbatLVCorGainC,0,,1,1,Failed,0.044

@@ -82,6 +82,41 @@ class Accounts(db.Model):
     return 'Accounts:' + str(self.id)
 
 
+#eol_pass_list table
+class EolPassList(db.Model):
+  __tablename__ = 'eol_pass_list'
+  __searchable__ = ['PPID', 'TestItem']  # these fields will be indexed by whoosh
+  __analyzer__ = ChineseAnalyzer()   
+
+  id = db.Column(db.Integer, primary_key =True,nullable=False)
+  fullname = db.Column(db.String(200), nullable=True)
+  username = db.Column(db.String(50), nullable=True)
+  password = db.Column(db.String(255), nullable=True)
+  email = db.Column(db.String(100))
+
+
+  def __repr__(self):
+    return 'EolPassList:' + str(self.id)
+
+#eol_pass_list table
+class EolFailList(db.Model):
+  __tablename__ = 'eol_pass_list'
+  __searchable__ = ['PPID', 'TestItem']  # these fields will be indexed by whoosh
+  __analyzer__ = ChineseAnalyzer()   
+
+  id = db.Column(db.Integer, primary_key =True,nullable=False)
+  fullname = db.Column(db.String(200), nullable=True)
+  username = db.Column(db.String(50), nullable=True)
+  password = db.Column(db.String(255), nullable=True)
+  email = db.Column(db.String(100))
+
+
+  def __repr__(self):
+    return 'EolFailList:' + str(self.id)
+
+
+
+
 def calculate_percentage(val, total):
     """Calculates the percentage of a value over a total"""
     percent = np.divide(val, total)
@@ -338,6 +373,15 @@ def get_barchart_data():
 
 @app.route('/charts')
 def charts():
+  return render_template('charts.html')
+  
+
+@app.route('/eolCharts')
+def eolCharts():
+  post = BlogPost.query.get_or_404(id)
+  if request.method =='POST':
+    file = request.files['inputFile']
+
   return render_template('charts.html')
 
 

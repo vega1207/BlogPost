@@ -1,0 +1,68 @@
+Product Name,29113425
+Station Name,EOL
+Serial Number,!210060205!_V29113441
+DateTime,20210331_132706
+Total Test Time,86.800000
+Result,Fail
+TestItem,MeasureValue,Unit,LowLimit,HiLimit,Result,CycleTime
+Sheung_shui,,,,,Passed,0.764
+Switch ON CAN_12,,,,,Passed,0.147
+Switch On CAN_34,,,,,Passed,0.130
+Voltage=12.5V,,,,,Passed,0.160
+Current=5A,,,,,Passed,0.123
+12V_DC_Source,,,,,Passed,0.098
+Wait,,,,,Passed,1.020
+Switch ON Current measure,,,,,Passed,0.133
+Switch OFF 12V_9,,,,,Passed,0.130
+Switch On 12V_9,,,,,Passed,0.129
+Wait,,,,,Passed,0.516
+Switch OFF Current measure,,,,,Passed,0.135
+Wait,,,,,Passed,0.516
+Wake up,,,,,Passed,1.083
+Wait,,,,,Passed,0.520
+Switch OFF CAN_34,,,,,Passed,0.178
+Wait,,,,,Passed,5.016
+Standby Power Current Measure,1.216,,0.6,0.9,Failed,0.160
+Connect DUT,,,,,Passed,4.685
+Wait,,,,,Passed,0.515
+Read MAIN_MSGu8InverterHVILStatus,0,,0,0,Passed,0.064
+Switch On 14,,,,,Passed,0.131
+Wait,,,,,Passed,0.516
+Switch OFF CAN_43,,,,,Passed,0.131
+Switch On 12V_10,,,,,Passed,0.147
+Switch On 12V_20,,,,,Passed,0.137
+EnvironmentPath,,,,,Passed,1.006
+Write MAIN_VSIBenchOnDataTreatmentC=1 ,,,,,Passed,0.212
+FPGA version,00000000,,0d180a03,,Failed,0.030
+MCU version,0405,,0405,,Passed,0.028
+Read FSSMACS_AclState,0,,30,50,Failed,0.024
+Read FTSMACS_AclState,0,,3,3,Failed,0.024
+Read SASMACS_AclState,0,,2,2,Failed,0.024
+Read HV_FS_FaultLevel_U16,0,,0,2,Passed,0.024
+Read FTEAEXC_UResExcAvg,0,,0.95,1.2,Failed,0.027
+Set MAIN_VSIRxaFaultBOverVoltVBat=0,,,,,Passed,0.068
+Read MAIN_VSIRxsGridVoltW,0,,2,4,Failed,0.023
+Wait,,,,,Passed,0.515
+Set LV Voltage=10V,,,,,Passed,0.142
+Wait,,,,,Passed,0.517
+Read_FS_UbatLV_U16,0,,900,1300,Failed,0.048
+Set_LV_Voltage=12V,,,,,Passed,0.140
+Wait,,,,,Passed,0.516
+Read_FS_UbatLV_U16,0,,1200,1600,Failed,0.045
+Set_LV_Voltage=14V,,,,,Passed,0.138
+Wait,,,,,Passed,0.515
+Read_FS_UbatLV_U16,0,,1400,1800,Failed,0.046
+Read Correction,NaN,,0,1,Failed,0.137
+LV_Caculation ,,,,,Passed,0.060
+NumericTest,NaN,,0,1,Failed,0.002
+Set_LV_Voltage=12.5V,,,,,Passed,0.158
+Switch On CAN_34,,,,,Passed,0.160
+HV_Channel ON,,,,,Passed,0.131
+Apply HV Battery = 0V,,,,,Passed,0.048
+HV_Source ON,,,,,Passed,0.054
+Switch On HV_36,,,,,Passed,0.139
+Switch On HV_38,,,,,Passed,0.144
+Switch On 12V_8,,,,,Passed,0.150
+Switch On 12V_9,,,,,Passed,0.136
+Switch On ENS_20,,,,,Passed,0.139
+Read T_Iuvw3_U16[0],0,,2024,2080,Failed,0.033

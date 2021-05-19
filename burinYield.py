@@ -39,40 +39,15 @@ class BurinYield:
             print(filename)
             # self.save_to_csv(filename,str(yield_rate),'YieldRate.csv')
         return filename,Yield
-    
-    def dict_factorary(self, data):
-        get_csv_testitems = []
-        get_csv_testitems_result = []
-        for row in data:
-            get_csv_testitems.append(row[0])
-        for row in data:
-            get_csv_testitems_result.append(row[1])
-        dict_data = dict(zip(get_csv_testitems, get_csv_testitems_result))
-        print(dict_data)
-        return dict_data
 
-    def findRepeatlog(self, repeat_string=''):
-        csv_list = []
-        # pathlist = os.listdir(self.path)
-        pathlist = '/home/ubuntu/project/OP1300/20210516/Failed'
-        for i, filename in enumerate(pathlist):
-            pathx = self.path + "/" + filename
-            result = pathx.find(repeat_string)
-            # print(pathx)
-            if result != -1:
-                stringToint = int(pathx[-19:-4].replace('_', ''))
-                # print(stringToint)
-                csv_list.append(stringToint)
-        # print(time_list)
-        return csv_list
-
-    def FindOneRecode(self,i,path=''):
+    def FindOneRecode(i,path=''):
         with open(path,'r') as csvfile: 
             reader = csv.reader(csvfile)
             for j,rows in enumerate(reader):    
                 if j ==i:   
                     result = rows
                     return result[1]
+
 
     def save_to_csv(self,TestDate='',rate='', csv_name="None.csv"):
         f = open(csv_name, 'a')
@@ -83,7 +58,7 @@ class BurinYield:
 
 if __name__ == '__main__':  
     burinYield = BurinYield('/home/ubuntu/project/OP1300')
-    results = burinYield.yieldRate()
+    results = burinYield.yieldRate()            
 
     # pathlist = os.listdir('./PASS')
     # for each_file in pathlist:

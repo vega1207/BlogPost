@@ -1,0 +1,36 @@
+Product Name,29113425
+Station Name,EOL
+Serial Number,!203290040!_V29113441
+DateTime,20210330_190239
+Total Test Time,40.000000
+Result,Fail
+TestItem,MeasureValue,Unit,LowLimit,HiLimit,Result,CycleTime
+Sheung_shui,,,,,Passed,0.745
+Switch ON CAN_12,,,,,Passed,0.218
+Switch On CAN_34,,,,,Passed,0.131
+Voltage=12.5V,,,,,Passed,0.141
+Current=5A,,,,,Passed,0.145
+12V_DC_Source,,,,,Passed,0.102
+Wait,,,,,Passed,1.027
+Switch ON Current measure,,,,,Passed,0.132
+Switch OFF 12V_9,,,,,Passed,0.134
+Switch On 12V_9,,,,,Passed,0.130
+Wait,,,,,Passed,0.517
+Switch OFF Current measure,,,,,Passed,0.202
+Wait,,,,,Passed,0.516
+Wake up,,,,,Passed,1.070
+Wait,,,,,Passed,0.518
+Switch OFF CAN_34,,,,,Passed,0.146
+Wait,,,,,Passed,5.016
+Standby Power Current Measure,1.0730,,0.6,0.9,Failed,0.156
+Connect DUT,,,,,Passed,4.707
+Wait,,,,,Passed,0.516
+Read MAIN_MSGu8InverterHVILStatus,0,,0,0,Passed,0.068
+Switch On 14,,,,,Passed,0.133
+Wait,,,,,Passed,0.516
+Switch OFF CAN_43,,,,,Passed,0.131
+Switch On 12V_10,,,,,Passed,0.132
+Switch On 12V_20,,,,,Passed,0.131
+EnvironmentPath,,,,,Passed,1.027
+Write MAIN_VSIBenchOnDataTreatmentC=1 ,,,,,Passed,0.202
+FPGA version,00000000,,0d180a03,,Failed,0.030

@@ -1,0 +1,116 @@
+Product Name,29113425
+Station Name,EOL
+Serial Number,!203020120!_V29113441
+DateTime,20210401_111040
+Total Test Time,90.000000
+Result,Fail
+TestItem,MeasureValue,Unit,LowLimit,HiLimit,Result,CycleTime
+Sheung_shui,,,,,Passed,0.752
+Switch ON CAN_12,,,,,Passed,0.158
+Switch On CAN_34,,,,,Passed,0.131
+Voltage=12.5V,,,,,Passed,0.143
+Current=5A,,,,,Passed,0.120
+12V_DC_Source,,,,,Passed,0.094
+Wait,,,,,Passed,1.016
+Switch ON Current measure,,,,,Passed,0.138
+Switch OFF 12V_9,,,,,Passed,0.129
+Switch On 12V_9,,,,,Passed,0.131
+Wait,,,,,Passed,0.515
+Switch OFF Current measure,,,,,Passed,0.130
+Wait,,,,,Passed,0.516
+Wake up,,,,,Passed,1.101
+Wait,,,,,Passed,0.522
+Switch OFF CAN_34,,,,,Passed,0.141
+Wait,,,,,Passed,5.016
+Standby Power Current Measure,0.724,,0.6,0.9,Passed,0.159
+Connect DUT,,,,,Passed,4.824
+Wait,,,,,Passed,0.516
+Read MAIN_MSGu8InverterHVILStatus,0,,0,0,Passed,0.071
+Switch On 14,,,,,Passed,0.139
+Wait,,,,,Passed,0.516
+Switch OFF CAN_43,,,,,Passed,0.132
+Switch On 12V_10,,,,,Passed,0.131
+Switch On 12V_20,,,,,Passed,0.132
+EnvironmentPath,,,,,Passed,1.203
+Write MAIN_VSIBenchOnDataTreatmentC=1 ,,,,,Passed,0.207
+FPGA version,0d180a03,,0d180a03,,Passed,0.029
+MCU version,0405,,0405,,Passed,0.030
+Read FSSMACS_AclState,50,,30,50,Passed,0.024
+Read FTSMACS_AclState,3,,3,3,Passed,0.025
+Read SASMACS_AclState,2,,2,2,Passed,0.023
+Read HV_FS_FaultLevel_U16,0,,0,2,Passed,0.024
+Read FTEAEXC_UResExcAvg,0.977,,0.95,1.2,Passed,0.029
+Set MAIN_VSIRxaFaultBOverVoltVBat=0,,,,,Passed,0.078
+Read MAIN_VSIRxsGridVoltW,3.000,,2,4,Passed,0.026
+Wait,,,,,Passed,0.516
+Set LV Voltage=10V,,,,,Passed,0.160
+Wait,,,,,Passed,0.517
+Read_FS_UbatLV_U16,1156,,900,1300,Passed,0.048
+Set_LV_Voltage=12V,,,,,Passed,0.166
+Wait,,,,,Passed,0.516
+Read_FS_UbatLV_U16,1401,,1200,1600,Passed,0.044
+Set_LV_Voltage=14V,,,,,Passed,0.172
+Wait,,,,,Passed,0.516
+Read_FS_UbatLV_U16,1642,,1400,1800,Passed,0.056
+Read Correction,0.00823,,0,1,Passed,0.141
+LV_Caculation ,,,,,Passed,0.062
+NumericTest,0.00823,,0,1,Passed,0.002
+Set_LV_Voltage=12.5V,,,,,Passed,0.142
+Switch On CAN_34,,,,,Passed,0.130
+HV_Channel ON,,,,,Passed,0.130
+Apply HV Battery = 0V,,,,,Passed,0.044
+HV_Source ON,,,,,Passed,0.044
+Switch On HV_36,,,,,Passed,0.131
+Switch On HV_38,,,,,Passed,0.131
+Switch On 12V_8,,,,,Passed,0.132
+Switch On 12V_9,,,,,Passed,0.131
+Switch On ENS_20,,,,,Passed,0.130
+Read T_Iuvw3_U16[0],2046,,2024,2080,Passed,0.034
+Read T_Iuvw3_U16[1],2052,,2024,2080,Passed,0.023
+Read T_Iuvw3_U16[2],2057,,2024,2080,Passed,0.024
+Read FS_IbatHV_U16,2048,,2024,2080,Passed,0.024
+HV_Channel ON,,,,,Passed,0.129
+HV_Source ON,,,,,Passed,0.044
+Apply HV Battery = 270V,,,,,Passed,0.043
+Apply HV Battery =1A,,,,,Passed,0.053
+Wait,,,,,Passed,0.517
+Read FSEABHV_UbatHV,270.511,,265,273,Passed,0.023
+HV_Channel OFF,,,,,Passed,0.129
+HV_Source OFF,,,,,Passed,0.054
+Wait,,,,,Passed,1.016
+Read FSMAPMT_PmTemp,21.677,,18,26,Passed,0.023
+Read FSMADBT_DboardTemp,22.255,,18,40,Passed,0.023
+Read FSMACBT_CboardTempHV,22.766,,18,40,Passed,0.028
+Read FSMACBT_CboardTempLV,22.723,,18,40,Passed,0.023
+Read FSMAICT_CoolingTemp,21.915,,18,28,Passed,0.024
+Read FSMAMST_StatorTemp1,83.237,,78,88,Passed,0.024
+Read FSMAMST_StatorTemp2,86.647,,78,88,Passed,0.024
+Wait,,,,,Passed,0.515
+Set BSW_U32SystemShutDownDelay_MaxC=720000,,,,,Passed,0.161
+Set MAIN_bMSGRxToutBenchOnC=1,,,,,Passed,0.161
+Wait,,,,,Passed,0.516
+Set MAIN_MSGu8PowerMode=7,,,,,Passed,0.183
+Set MAIN_u16ModeReq=1,,,,,Passed,0.170
+Wait,,,,,Passed,0.516
+Set UDS_bRoutineActive=1,,,,,Passed,0.170
+Set UDS_bRoutineActive=1,,,,,Passed,0.169
+Wait,,,,,Passed,0.515
+Set MAIN_MSGu8PowerMode=7,,,,,Passed,0.165
+Wait,,,,,Passed,0.516
+ENS testing ENS_u32Dty,9757,,5000,15000,Passed,1.167
+ENS testing ENS_u32Prd,20004,,10000,30000,Passed,1.092
+HV_Channel ON,,,,,Passed,0.128
+HV_Source ON,,,,,Passed,0.044
+Apply HV Battery = 220V,,,,,Passed,0.043
+Wait,,,,,Passed,0.517
+Read FS_UbatHV_U16,960,,900,1000,Passed,0.048
+Apply HV Battery = 280V,,,,,Passed,0.053
+Wait,,,,,Passed,0.517
+Read FS_UbatHV_U16,1218,,1000,1300,Passed,0.044
+Apply HV Battery = 350V,,,,,Passed,0.044
+Wait,,,,,Passed,0.516
+Read FS_UbatHV_U16,1520,,1400,1600,Passed,0.045
+Read Correction,0.232,,0,1,Passed,0.054
+HV_Caculation ,,,,,Passed,0.060
+Wait,,,,,Passed,1.517
+Check_the_water,0,,1,1,Failed,37.412
