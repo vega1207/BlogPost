@@ -63,7 +63,7 @@ class Report:
                     data = self.csv_read(pass_file_path)
                     data_combine = self.dict_factorary(data)
                     db.mysqldata(file, data_combine)
-
+        
 
 if __name__ == '__main__':  
     report = Report('/home/ubuntu/project/29113425')

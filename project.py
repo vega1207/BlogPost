@@ -89,11 +89,10 @@ class EolPassList(db.Model):
   __analyzer__ = ChineseAnalyzer()   
 
   id = db.Column(db.Integer, primary_key =True,nullable=False)
-  fullname = db.Column(db.String(200), nullable=True)
-  username = db.Column(db.String(50), nullable=True)
-  password = db.Column(db.String(255), nullable=True)
-  email = db.Column(db.String(100))
-
+  PPID = db.Column(db.String(50), nullable=True)
+  TestItem = db.Column(db.String(200), nullable=True)
+  MeasureValue = db.Column(db.String(255), nullable=True)
+  Result = db.Column(db.String(100))
 
   def __repr__(self):
     return 'EolPassList:' + str(self.id)
@@ -105,10 +104,11 @@ class EolFailList(db.Model):
   __analyzer__ = ChineseAnalyzer()   
 
   id = db.Column(db.Integer, primary_key =True,nullable=False)
-  fullname = db.Column(db.String(200), nullable=True)
-  username = db.Column(db.String(50), nullable=True)
-  password = db.Column(db.String(255), nullable=True)
-  email = db.Column(db.String(100))
+  PPID = db.Column(db.String(50), nullable=True)
+  TestItem = db.Column(db.String(200), nullable=True)
+  MeasureValue = db.Column(db.String(255), nullable=True)
+  Result = db.Column(db.String(100))
+
 
 
   def __repr__(self):
@@ -376,11 +376,18 @@ def charts():
   return render_template('charts.html')
   
 
-@app.route('/eolCharts',methods= ['GET','POST'])
-def eolCharts():
+@app.route('/eolcharts/<int:id>',methods= ['GET','POST'])
+def eolcharts():
   post = EolPassList.query.get_or_404(id)
+  if request.method =='POST':
+    post.PPID = request.form.get('PPID')
+    post.TestItem = request.form.get('TestItem')
+    post.MeasureValue = request.form.get('MeasureValue')  
+    db.session.commit()
+    return redirect('/eolcharts')
+  else:
 
-  return render_template('eolcharts.html',post=post)
+    return render_template('eolcharts.html',post=post)
 
 
 

@@ -2,6 +2,20 @@
  
 {% block title %}Charts{% endblock %}
 {% block content %}
-{{post.TestItem}}
+<h3>EOL Data</h3>
+<form action="/eolcharts/{{post.ID}}" method="GET">
+  <label for="title">PPID:</label>
+  <textarea class="form-control" name="title" id="title" aria-label="Enter Title" rows="1"
+    readonly>{{post.PPID}}</textarea>
+  <label for="author">TestItem:</label>
+  <textarea class="form-control" name="author" id="author" aria-label="Enter Author" rows="1"
+    readonly>{{post.TestItem}}</textarea>
+  <label for="content">MeasureValue:</label>
+  <textarea class="form-control" name="content" id="content" aria-label="Enter Content" rows="17"
+    readonly>{{post.MeasureValue}}</textarea>
+  {#{{post.data.decode('utf-8')}}#}
+  <br>
+  <input type="button" value='Back' onclick="javascript:history.go(-1)">
+</form>
 
 {% endblock %}
